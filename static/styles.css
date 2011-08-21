@@ -1,0 +1,64 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 12pt;
+    margin: 1em;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+h1, h2, p {
+    margin-bottom: 0.5em;
+}
+
+button, input[type="file"] {
+    padding: 0.5em;
+}
+
+input[type="file"] {
+    width: 40em;
+}
+
+p.hidden {
+    display: none;
+}
+
+p.visible {
+    display: none;
+}
+
+#upload-area {
+    height: 3em;
+}
+
+textarea.no-text-entered {
+    color: #bbb;
+}
+
+iframe {
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+
+table {
+    margin-bottom: 1em;
+}
+
+th {
+    text-align: right;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 0.2em;
+}
+
+.ad {
+    font-size: 80%
+}

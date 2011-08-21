@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SuperUpload</title>
+    <link rel="stylesheet" href="reset-min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+  </head>
+  <body>
+    <h1>SuperUpload</h1>
+    <form id="upload-form" action="/upload" enctype="multipart/form-data" method="post" target="upload-iframe">
+      <div id="upload-area">
+        <p id="file-selector">
+          <input type="file" name="upload" multiple="multiple"/>
+        </p>
+        <p id="upload-progress" class="hidden">
+          Uploading... <span id="percent">0</span>%
+        </p>
+        <p id="upload-done" class="hidden">
+          Upload finished, file <span id="uploaded-file"></span>
+        </p>
+      </div>
+    </form>
+    <form action="/save" method="post">
+      <p>
+        <textarea name="description" rows="4" cols="60" class="no-text-entered">Please describe your upload...</textarea>
+      </p>
+      <p>
+        <button id="save-button" name="save" disabled="disabled">save</button>
+      </p>
+    </form>
+    <iframe name="upload-iframe"></iframe>
+    <p class="ad">
+      SuperUpload by Hans H&uuml;bner - Check out the <a href="https://github.com/hanshuebner/node-superupload">source code</a>.
+    </p>
+  </body>
+</html>

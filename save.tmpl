@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>SuperUpload - File saved</title>
+    <link rel="stylesheet" href="reset-min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1>SuperUpload</h1>
+    <h2>I can't do much, but that I do well</h2>
+    <table>
+      <tbody>
+        <tr><th>Filename:</th><td>{{session.upload.name}}</td></tr>
+        <tr><th>Local Pathname:</th><td>{{session.upload.path}}</td></tr>
+        <tr><th>Description:</th><td>{{fields.description}}</td></tr>
+      </tbody>
+    </table>
+    <p>
+      You can <a href='/download'>download</a> the file that you have uploaded or 
+      <a href='/'>upload</a> another file.
+    </p>
+    <p class="ad">
+      SuperUpload by Hans H&uuml;bner - Check out the <a href="https://github.com/hanshuebner/node-superupload">source code</a>.
+    </p>
+  </body>
+</html>
